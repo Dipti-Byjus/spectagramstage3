@@ -58,44 +58,11 @@ export default class CreatePost extends Component {
                             style={styles.previewImage}
                         ></Image>
                         <View style={{ height: RFValue(this.state.dropdownHeight) }}>
+
+    //complete the dropdown picker here
+    
                             <DropDownPicker
-                                items={[
-                                    { label: "Image 1", value: "image_1" },
-                                    { label: "Image 2", value: "image_2" },
-                                    { label: "Image 3", value: "image_3" },
-                                    { label: "Image 4", value: "image_4" },
-                                    { label: "Image 5", value: "image_5" },
-                                    { label: "Image 6", value: "image_6" },
-                                    { label: "Image 7", value: "image_7" }
-                                ]}
-                                defaultValue={this.state.previewImage}
-                                containerStyle={{
-                                    height: 40,
-                                    borderRadius: 20,
-                                    marginBottom: 10
-                                }}
-                                onOpen={() => {
-                                    this.setState({ dropdownHeight: 170 });
-                                }}
-                                onClose={() => {
-                                    this.setState({ dropdownHeight: 40 });
-                                }}
-                                style={{ backgroundColor: "transparent" }}
-                                itemStyle={{
-                                    justifyContent: "flex-start"
-                                }}
-                                dropDownStyle={{ backgroundColor: "#2a2a2a" }}
-                                labelStyle={{
-                                    color: "white"
-                                }}
-                                arrowStyle={{
-                                    color: "white"
-                                }}
-                                onChangeItem={item =>
-                                    this.setState({
-                                        previewImage: item.value
-                                    })
-                                }
+                                
                             />
                         </View>
 
